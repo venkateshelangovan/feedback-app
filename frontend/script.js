@@ -23,7 +23,7 @@ document.getElementById('feedbackForm').addEventListener('submit', async (e) => 
     responseMsg.classList.add('hidden');
 
     try {
-        const response = await fetch('/submit-feedback', {
+        const response = await fetch('https://feedback-app-pynm.onrender.com/submit-feedback', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
